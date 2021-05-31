@@ -22,6 +22,8 @@ function alea() {
     document.getElementById('computer-result').innerHTML = Math.floor(Math.random() * 10);
     if (parseInt(document.getElementById('user-result').innerHTML = Math.floor(Math.random() * 10)) > parseInt(document.getElementById('computer-result').innerHTML = Math.floor(Math.random() * 10))) {
         document.getElementById('winner').innerHTML = 'Complimenti! Hai vinto!';
+    } else if (parseInt(document.getElementById('user-result').innerHTML = Math.floor(Math.random() * 10)) === parseInt(document.getElementById('computer-result').innerHTML = Math.floor(Math.random() * 10))) {
+        document.getElementById('winner').innerHTML = 'Ops! Scontro ad armi pari!';
     } else {
         document.getElementById('winner').innerHTML = 'Oh no! Purtroppo hai perso!';
     }
