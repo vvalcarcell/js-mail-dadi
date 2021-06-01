@@ -7,10 +7,11 @@ var check = false;
 for (var i = 0; i < eMail.length; i++) {
     if (userEmail === eMail[i]) {
         check = true;
+        break; //non va a verifare anche le altre mail in memoria: risparmio
     }
 }
-
-if (check = true) {
+// check = true --> sbagliato perchè è una nuova affermazione!!!
+if (check) {
     document.getElementById('welcome').innerHTML = 'Benvenuto/a!';
 } else {
     alert('Non sei registrato al sito!');
